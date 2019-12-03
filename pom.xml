@@ -66,7 +66,6 @@
             <version>0.9.5.4</version>
         </dependency>
 
-
         <!-- mysql驱动包 -->
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
@@ -116,6 +115,14 @@
             <artifactId>spring-test</artifactId>
             <version>${jar.version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <!-- Json -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.10.0</version>
         </dependency>
     </dependencies>
 
