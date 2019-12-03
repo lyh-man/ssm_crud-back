@@ -13,6 +13,16 @@ public class Employee {
 
     private Integer deptid;
 
+    private String deptName;
+
+    public String getDeptName() {
+        return deptName;
+    }
+
+    public void setDeptName(String deptName) {
+        this.deptName = deptName;
+    }
+
     public Employee() {
     }
 
@@ -72,5 +82,18 @@ public class Employee {
 
     public void setDeptid(Integer deptid) {
         this.deptid = deptid;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", salary=" + salary +
+                ", age=" + age +
+                ", email='" + email + '\'' +
+                ", deptid=" + deptid +
+                ", deptName='" + deptName + '\'' +
+                '}';
     }
 }

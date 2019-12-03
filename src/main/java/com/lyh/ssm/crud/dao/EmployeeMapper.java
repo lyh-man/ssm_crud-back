@@ -2,7 +2,9 @@ package com.lyh.ssm.crud.dao;
 
 import com.lyh.ssm.crud.bean.Employee;
 import com.lyh.ssm.crud.bean.EmployeeExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface EmployeeMapper {
@@ -17,6 +19,8 @@ public interface EmployeeMapper {
     int insertSelective(Employee record);
 
     List<Employee> selectByExample(EmployeeExample example);
+
+    List<Employee> selectAll();
 
     Employee selectByPrimaryKey(Integer id);
 

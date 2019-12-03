@@ -10,7 +10,7 @@
        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 
     <!-- step1: 配置包扫描方式。扫描所有包，但是排除Controller层 -->
-    <context:component-scan base-package="com.lyh.ssm.crud.controller">
+    <context:component-scan base-package="com.lyh.ssm.crud">
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
