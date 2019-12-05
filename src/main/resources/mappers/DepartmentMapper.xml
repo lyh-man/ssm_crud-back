@@ -86,6 +86,11 @@
     from dept
     where deptId = #{deptid,jdbcType=INTEGER}
   </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from dept
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from dept
     where deptId = #{deptid,jdbcType=INTEGER}
