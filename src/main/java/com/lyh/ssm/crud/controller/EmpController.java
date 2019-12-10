@@ -19,14 +19,15 @@ public class EmpController {
 
     /**
      * 获取分页的数据
-     * @param pn 获取第几页的数据
+     * @param pageNum 获取第几页的数据
+     * @param pageSize 返回数据的条数
      * @return 返回数据
      */
-    @GetMapping("/emps/{pn}")
-    public EmpPageModel getAllEmp(@PathVariable Integer pn) {
+    @GetMapping("/emps/{pageNum}")
+    public EmpPageModel getAllEmp(@PathVariable Integer pageNum, @RequestParam Integer pageSize) {
         // step1:引入分页插件(PageHelper)
         // step2:每次查询前，设置查询的页面以及查询的条数，每次获取5条数据
-        PageHelper.startPage(pn, 5);
+        PageHelper.startPage(pageNum, pageSize);
         // step3:执行分页查询
         List<Employee> employeeList = empService.getAllEmp();
         // step4:包装查询后的数据
