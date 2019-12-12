@@ -3,7 +3,7 @@
 
 （1）ssm进行crud操作的小案例，包括环境配置、UI界面以及相关的crud的实现
 
-（2）涉及mysql，vue，bootstrap，ssm。
+（2）涉及mysql，vue，，ssm。
 
 
 ## 二、相关准备工作
@@ -54,13 +54,7 @@ emp(id自增，给其插个 null 即可)
 	INSERT INTO emp(id, name, salary, age, email, deptId) VALUES(null, 'mina', '9000', 23, 'mina@163.com', 2);
 ```
 
-### 2、前台展示  bootstrap + jQuery + vue
-	
-	页面 数据布局
-	id	name 	salary    age  email   deptName
-	
-	
-### 3、后台接口 SSM
+### 2、后台接口 SSM（仅供参考）
 ```
 实现增删改查
 	查所有员工： 两表联合查询
