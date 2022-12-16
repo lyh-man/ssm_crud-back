@@ -14,7 +14,7 @@
     <url>http://www.example.com</url>
 
     <properties>
-        <jar.version>4.3.17.RELEASE</jar.version>
+        <jar.version>5.2.20.RELEASE</jar.version>
     </properties>
 
     <dependencies>
